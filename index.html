@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <a href="" class="logo"> Logo</a>
+            <ul>
+                <li>
+                    <a href="http://">Home</a>
+                </li>
+                <li><a href="">Features</a> </li>
+                <li> <a href="">About</a>
+                </li>
+                <li><a href="">Contact</a></li>
+
+
+            </ul>
+            <img src="https://yt3.ggpht.com/yti/AHyvSCClsLzfFqnt4Z9_hZHEJ-9x6m5wGsdmvFQaJPjsaw=s88-c-k-c0x00ffffff-no-rj-mo"
+                alt="" srcset="" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="https://yt3.ggpht.com/yti/AHyvSCClsLzfFqnt4Z9_hZHEJ-9x6m5wGsdmvFQaJPjsaw=s88-c-k-c0x00ffffff-no-rj-mo"
+                            alt="" srcset="" class="user-pic">
+                        <h3>Sudarshan Shrestha</h3>
+                    </div>
+                    <hr>
+                    <a href="http://" class="sub-menu-link">
+                        <img src="https://yt3.ggpht.com/yti/AHyvSCClsLzfFqnt4Z9_hZHEJ-9x6m5wGsdmvFQaJPjsaw=s88-c-k-c0x00ffffff-no-rj-mo"
+                            alt="">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a> <a href="http://" class="sub-menu-link">
+                        <img src="https://yt3.ggpht.com/yti/AHyvSCClsLzfFqnt4Z9_hZHEJ-9x6m5wGsdmvFQaJPjsaw=s88-c-k-c0x00ffffff-no-rj-mo"
+                            alt="">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a> <a href="http://" class="sub-menu-link">
+                        <img src="https://yt3.ggpht.com/yti/AHyvSCClsLzfFqnt4Z9_hZHEJ-9x6m5wGsdmvFQaJPjsaw=s88-c-k-c0x00ffffff-no-rj-mo"
+                            alt="">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a> <a href="http://" class="sub-menu-link">
+                        <img src="https://yt3.ggpht.com/yti/AHyvSCClsLzfFqnt4Z9_hZHEJ-9x6m5wGsdmvFQaJPjsaw=s88-c-k-c0x00ffffff-no-rj-mo"
+                            alt="">
+                        <p>Edit Profile</p>
+                        <span> > </span>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+
+        <a href="#" onclick="openPopup()">
+            OpenPopup
+        </a>
+
+        <div class="popup" id="popup">
+            <h2>Thank you</h2>
+            <p>your detail has been submitted. Thanks!</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+
+    </div>
+
+    <script>
+        let popup = document.getElementById('popup');
+        function openPopup() {
+            popup.classList.add("open-popup");
+            console.log(popup);
+
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup")
+                ;
+        }
+        let subMenu = document.getElementById('subMenu')
+        function toggleMenu() {
+            console.log(subMenu);
+
+
+            subMenu.classList.toggle('open-menu');
+        }
+    </script>
+</body>
+
+</html>
