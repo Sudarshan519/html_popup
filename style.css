@@ -30,20 +30,54 @@
 .hero {
     width: 100%;
     min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* position: inherit; */
     background: #eceaff;
+    align-items: space-around;
     columns: #525252;
+}
+
+
+
+.bread {
+    color: red;
+    /* width: 100%; */
+    /* border-radius: 4px; */
+    padding: 2px;
+    background-color: grey;
+    margin-bottom: 10px;
 }
 
 nav {
     background: #1a1a1a;
-    width: 100%;
-    padding: 10px 10%;
-    height: 80px;
-    display: flex;
 
+    padding: 10px 10%;
+
+    display: flex;
+    position: fixed;
+    flex-grow: 3;
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
+}
+
+.sidebar {
+    width: 220px;
+    color: red;
+    top: 0;
+    bottom: 0;
+    /* height: 100vh; */
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 1;
+    background: #1a1a1a;
+    color: grey;
+
+}
+
+.sidebar:hover {
+    width: 220px;
 }
 
 .user-pic {
@@ -83,10 +117,16 @@ nav ul li a {
     position: absolute;
     top: 100%;
     right: 10%;
-    width: 320px;
+    width: 260px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
+}
+
+a {
+    width: 200px;
+    flex-direction: column;
+    flex: 2;
 }
 
 .sub-menu-wrap.open-menu {
@@ -145,13 +185,13 @@ nav ul li a {
 }
 
 .sub-menu-link span {
-    font-size: 22px;
+    font-size: 16px;
     transition: transform 0.4s;
 
 }
 
-.sub-menu-link:hover span {
-    transform: translateX(5px);
+.sub-menu-link:hover {
+    transform: translateY(-5px);
 }
 
 .sub-menu-link:hover p {
